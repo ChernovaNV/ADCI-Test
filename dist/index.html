@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>MMlampadari</title>
+</head>
+<body>
+<div class="page-container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__inner container">
+        <a href="#" class="logo__link">
+          <picture>
+            <source media="(max-width: 840px)" srcset="images/logo-mobile.png">
+            <img src="images/logo.png" alt="Logotype" class="logo">
+          </picture></a>
+        <div class="header__content ">
+
+          <button class="login btn--reset" data-modal="login-modal">
+            <span class="login__title">Area Riservata</span>
+            <img src="images/lock.png" alt="Lock" class="login__img">
+          </button><!-- /.login-->
+
+          <!-- Menu -->
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#" class="menu__link menu__link--active">Home</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Azienda</a>
+                <ul class="submenu">
+                  <li class="submenu__item"><a href="#" class="submenu__link">Storia</a></li>
+                  <li class="submenu__item"><a href="#" class="submenu__link">MM Design</a></li>
+                  <li class="submenu__item"><a href="#" class="submenu__link">Designer</a></li>
+                  <li class="submenu__item"><a href="#" class="submenu__link">Certificazioni</a></li>
+                </ul>
+              </li>
+              <li class="menu__item"><a href="#" class="menu__link">Collezioni</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">News</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Contatti</a></li>
+            </ul>
+          </nav><!--/.menu -->
+          <button class="menu-toggle btn--reset for-mobile">
+            <span class="menu-toggle__item menu-toggle__item--1"></span>
+            <span class="menu-toggle__item menu-toggle__item--2"></span>
+            <span class="menu-toggle__item menu-toggle__item--3"></span>
+          </button>
+
+        </div><!-- /.header__content -->
+      </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <section class="slider">
+        <div class="slider__container swiper-container">
+          <ul class="slider__track swiper-wrapper">
+
+            <li class="slider__item swiper-slide">
+                <img src="images/bg.jpg" alt="Photo of room" class="slider__img">
+              <div class="slider__content">
+                <h1 class="slider__title title">Lampadari contemporanei</h1>
+                <p class="slider__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+              </div>
+            </li> <!-- /.slider__item -->
+
+            <li class="slider__item swiper-slide">
+              <img src="images/bg.jpg" alt="Photo of room" class="slider__img">
+              <div class="slider__content">
+                <h1 class="slider__title title">Lampadari contemporanei</h1>
+                <p class="slider__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+              </div>
+            </li><!-- /.slider__item -->
+
+            <li class="slider__item swiper-slide">
+              <img src="images/bg.jpg" alt="Photo of room" class="slider__img">
+              <div class="slider__content">
+                <h1 class="slider__title title">Lampadari contemporanei</h1>
+                <p class="slider__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+              </div>
+            </li><!-- /.slider__item -->
+
+          </ul><!-- /.slider__track -->
+
+          <div class="slider__pagination swiper-pagination">
+          </div>
+        </div>
+      </section><!-- /.slider -->
+      <section class="infobox">
+        <button class="infobox__btn btn--reset">
+          <img src="images/arrow.png" alt="Arrow" class="infobox__img">
+        </button>
+        <div class="infobox__content">
+          <article class="infobox__article infobox__article--beige">
+            <h2 class="infobox__title title">Stai pensando ad un
+              progetto?</h2>
+            <p class="infobox__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+            <a href="" class="infobox__link infobox__link--white" tabindex="-1">Approfondisci</a>
+          </article>
+
+          <article class="infobox__article">
+            <h2 class="infobox__title title">Vi aspettiamo alla fiera
+              Euroluce</h2>
+            <p class="infobox__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+            <a href="" class="infobox__link" tabindex="-1">Approfondisci</a>
+          </article>
+
+          <article class="infobox__article infobox__article--black">
+            <h2 class="infobox__title title">Scopri la nuova collezione</h2>
+            <p class="infobox__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+            <a href="" class="infobox__link" tabindex="-1">Approfondisci</a>
+          </article>
+        </div>
+      </section><!-- /.infobox -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <!--Article 1 -->
+          <article class="footer__article">
+            <h3 class="footer__title title">Lampadari made in italy</h3>
+            <p class="footer__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi
+              ut aliquip ex ea</p>
+          </article>
+          <!--Article 2 -->
+          <article class="footer__article">
+            <h3 class="footer__title title">lampadari artigianali</h3>
+            <p class="footer__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi
+              ut aliquip ex ea </p>
+          </article>
+          <!--Article 3 -->
+          <article class="footer__article">
+            <h3 class="footer__title title">45 anni di esperienza</h3>
+            <p class="footer__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi
+              ut aliquip ex ea </p>
+          </article>
+
+          <!-- Form footer -->
+          <form class="footer__form form">
+            <fieldset class="footer-form__fieldset form__fieldset">
+              <legend class="footer-form__title form__title title">Newsletter</legend>
+              <input type="text" name="Nome e Cognome" placeholder="Nome e Cognome" class="footer-form__input form__input">
+              <input type="email" name="email" placeholder="Email" class="footer-form__input form__input">
+              <div class="checkbox__group">
+                <input type="checkbox" id="checkbox-1" class="footer-form__checkbox checkbox" name="checkbox">
+                <label for="checkbox-1" class="checkbox__label">Acconsento al trattamento dei dati</label>
+              </div>
+              <button type="submit" class="footer-form__btn form__btn btn--reset">Iscriviti</button>
+            </fieldset>
+          </form>
+        </div><!-- /.footer__content -->
+        <div class="footer__bottom">
+          <div class="copyright">
+            <span class="copyright__item">MMLAMPADARI srl</span>
+            <span class="copyright__item">Via Feltrina 00</span>
+            <span class="copyright__item">31111 Pederobba (TV)</span>
+            <span class="copyright__item">0423.123456</span>
+            <span class="copyright__item">info@mmlampadari.mm</span>
+            <span class="copyright__item">P.IVA 04123456789</span>
+          </div>
+          <div class="social">
+            <a href="#" class="social__link"><img src="images/facebook.png" alt="link to facebook"
+                class="social__item social__item--fb"></a>
+            <a href="#" class="social__link"><img src="images/instagram.png" alt="link to instagram"
+                class="social__item social__item--insta"></a>
+            <a href="#" class="social__link"><img src="images/pinterest.png" alt="link to pinterest"
+                class="social__item social__item--pin"></a>
+          </div>
+          <div class="language">
+            <button class="language__item btn--reset">ita</button>
+            <button class="language__item btn--reset">eng</button>
+            <button class="language__item btn--reset">deu</button>
+            <button class="language__item btn--reset">pyc</button>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- MODAL -->
+    <section class="modal is-hidden" id="login-modal">
+      <div class="modal__content">
+        <header class="modal__header">
+          <h4 class="modal__title title">Area Riservata</h4>
+          <button class="modal__close btn--reset" type="button"><img src="images/exit.png" alt="exit" class="modal__img"></button>
+        </header>
+
+        <div class="modal__form">
+          <!--Form authorization -->
+          <form class="modal__authorization authorization form">
+            <fieldset class="authorization__fieldset form__fieldset">
+              <legend class="authorization__litle form__title title">Accedi</legend>
+
+              <input type="email" class="authorization__input form__input" placeholder="E-mail" name="email">
+              <input type="password" class="authorization__input form__input" placeholder="Password" name="password" minlength="4"
+                maxlength="20">
+
+              <button type="submit" class="authorization__btn modal__btn form__btn btn--reset">Accedi</button>
+
+              <p class="authorization__text">Password dimenticata</p>
+            </fieldset><!-- /.authorization__fieldset -->
+          </form>
+
+          <!--Form registration -->
+          <form class="modal__registration registration form">
+            <fieldset class="registration__fieldset form__fieldset">
+              <legend class="registration__litle form__title title">Registrati</legend>
+
+              <input type="text" class="registration__input form__input" placeholder="Nome" name="name">
+              <input type="text" class="registration__input form__input" placeholder="Cognome" name="firstname">
+              <input type="email" class="registration__input form__input" placeholder="E-mail" name="email">
+              <input type="password" class="registration__input form__input" placeholder="Password" name="password" minlength="4"
+                maxlength="20">
+
+              <div class="checkbox__group">
+                <input type="checkbox" id="checkbox-2" class="registration__checkbox checkbox" name="checkbox">
+                <label for="checkbox-2" class="registration__label checkbox__label">Acconsento al trattamento dei dati</label>
+              </div>
+              <div class="checkbox__group">
+                <input type="checkbox" id="checkbox-3" class="registration__checkbox checkbox" name="checkbox">
+                <label for="checkbox-3" class="registration__label checkbox__label">Mi iscrivo alla Newsletter</label>
+              </div>
+
+              <button type="submit" class="registration__btn modal__btn form__btn btn--reset">Iscriviti</button>
+
+            </fieldset><!-- /.registration__fieldset -->
+          </form>
+        </div>
+      </div>
+    </section>
+
+</div> <!-- /.page-container -->
+
+   <!-- JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

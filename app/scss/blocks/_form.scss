@@ -1,0 +1,67 @@
+/* Form */
+
+.form {
+
+  &__fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1.3rem;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.6rem 0.5rem;
+
+    font-family: inherit;
+    font-size: 1.6rem;
+
+    &:last-of-type {
+      margin-bottom: 1rem;
+    }
+
+    &:hover,
+		&:focus,
+		&:active {
+			outline-color: $accent;
+		}
+  }
+
+  &__btn {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.6rem 0.5rem;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+
+    &:hover,
+		&:focus,
+		&:active {
+			background-color: $accent;
+		}
+  }
+
+}
+
+.checkbox {
+
+  &__group + &__group {
+    margin-top: 1.3rem;
+  }
+    &:hover,
+		&:focus,
+		&:active {
+			outline-color: $accent;
+		}
+}

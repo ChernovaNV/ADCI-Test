@@ -1,0 +1,73 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: $bg;
+
+	height: 100vh;
+
+	font-family: 'OpenSans', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #fff;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	display: inline-block;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+button {
+	cursor: pointer;
+	outline-color: $accent;
+}
+
+
+.page-container {
+	overflow-x: hidden;
+}
+
+.is-hidden {
+	display: none !important;
+}
+
+.for-mobile {
+	display: none;
+
+	@include mobile {
+		display: block;
+	}
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.error {
+	border: 2px #ff4019 solid !important;
+}
+
+.btn--reset {
+	border: none;
+	background-color: transparent;
+	color: inherit;
+}
+
+.title {
+    font-family: 'PlayfairDisplay', serif;
+    font-weight: 600;
+}

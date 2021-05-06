@@ -1,0 +1,21 @@
+@mixin font-face($font-family, $url, $weight: 400, $style: normal) {
+	@font-face {
+		font: {
+			family: $font-family;
+			weight: $weight;
+			style: $style;
+			display: swap;
+		}
+		src:
+			url('#{$url}.woff2') format('woff2'),
+			url('#{$url}.woff') format('woff');
+	}
+};
+
+@include font-face('OpenSans', '../fonts/OpenSans-Bold', 600);
+@include font-face('OpenSans', '../fonts/OpenSans-Regular');
+@include font-face('OpenSans', '../fonts/OpenSans-Light', 300);
+@include font-face('PlayfairDisplay', '../fonts/PlayfairDisplay-Bold', 600);
+@include font-face('PlayfairDisplay', '../fonts/PlayfairDisplay-BoldItalic', 600, italic);
+
+

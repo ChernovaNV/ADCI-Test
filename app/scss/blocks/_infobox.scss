@@ -1,0 +1,150 @@
+.infobox {
+  position: absolute;
+  top: 69vh;
+  left: 2rem;
+  right: 2rem;
+  z-index: $z-index-infobox;
+  transition: all 0.2s ease-in;
+
+  &__btn {
+    display: inherit;
+    margin: 0 auto;
+    width: 8.5rem;
+    height: 3rem;
+    background-color: #fff;
+    padding: 0.6rem 0;
+
+    &:hover,
+		&:focus {
+			background-color: $accent;
+		}
+  }
+
+  &__img {
+    width: 3.6rem;
+    height: 1.5rem;
+
+    display: block;
+    margin: auto;
+    transform: rotate(180deg);
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 180rem;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  &__article {
+    padding: 1.4rem 1.5rem 1.3rem;
+    background-color: #fff;
+    color: $dark;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &--beige {
+      background-color: #e2d1a6;
+    }
+    &--black {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    margin: 0 0 auto;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0.7rem 0 1.4rem;
+  }
+
+  &__link {
+    display: block;
+    margin-left: auto;
+    margin-right: 0.5rem;
+    font-size: 1.8rem;
+    border-bottom: 1px solid transparent;
+
+    &--white {
+      color: #fff;
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: 1px solid;
+    }
+  }
+
+  &--open {
+    transform: translateY(-83.3%);
+
+    & .infobox__img {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+/* Media */
+
+@include tablet {
+  .infobox {
+    top: 2rem;
+    left: 0;
+    bottom: 2rem;
+    right: auto;
+
+    display: flex;
+    transform: translateX(-95%);
+
+    &__btn {
+      height: 9rem;
+      width: 3rem;
+      margin: auto 0;
+      order: 2;
+    }
+    &__img {
+      transform: rotate(270deg);
+    }
+    &__content {
+      flex-direction: column;
+      max-width: 52rem;
+      height: auto;
+    }
+    &__article {
+      height: 33%;
+    }
+    &--open {
+    transform: translateX(0);
+      & .infobox__img {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+@include mobile {
+  .infobox {
+     transform: translateX(-93%);
+
+    &__content {
+      max-width: 36rem;
+    }
+    &__title {
+      font-size: 2.4rem;
+    }
+    &__text {
+      font-size: 1.4rem;
+    }
+    &--open {
+      transform: translateX(0);
+    }
+  }
+}
